@@ -3,6 +3,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -159,6 +163,18 @@ body {
   opacity: 1;
 }
 
+.main-link-outline {
+  background-color: transparent;
+  border-color: #fff;
+  color: #fff;
+}
+
+.main-link-outline:hover {
+  border-color: transparent;
+  background-color: #de2e54;
+  color: #fff;
+}
+
 /* site hero */
 
 .hero {
@@ -259,7 +275,36 @@ body {
 
 .index-service-actions {
   display: flex;
-   justify-content: center;
+  justify-content: center;
+}
+
+/* cta */
+
+.cta {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  background-color: #0eb4c1;
+  color: #fff;
+}
+
+.cta-heading {
+  margin-top: 0;
+  margin-bottom: 40px;
+  line-height: 1.2;
+  text-align: center;
+  font-family: "Open Sans", "Arial", sans-serif;
+  text-align: center;
+
+}
+
+.cta-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta-links-item:not(:last-child) {
+  margin-right: 40px;
 }
 
 /* site footer */
